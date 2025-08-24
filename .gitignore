@@ -1,0 +1,79 @@
+# -----------------
+# Python
+# -----------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+*.so
+*.egg-info/
+*.egg
+*.manifest
+*.spec
+
+# Virtual Environments
+.venv/
+venv/
+env/
+ENV/
+*.env
+.venv*/
+pip-wheel-metadata/
+.poetry/
+.mypy_cache/
+.pytest_cache/
+.tox/
+.coverage
+coverage.xml
+htmlcov/
+.cache/
+.dmypy.json
+.pyre/
+.pytype/
+
+# -----------------
+# Django
+# -----------------
+*.log
+*.pot
+*.pyc
+db.sqlite3
+db.sqlite3-journal
+media/
+staticfiles/
+static/
+local_settings.py
+
+# -----------------
+# IDEs & Editors
+# -----------------
+
+# Neovim
+*.swp
+*.swo
+*.swn
+*.swm
+.netrwhist
+.session
+tags
+
+# PyCharm
+.idea/
+*.iml
+
+# VSCode (in case you or others use it)
+.vscode/
+
+# -----------------
+# OS Files
+# -----------------
+.DS_Store
+Thumbs.db
+
+# -----------------
+# Project Specific
+# -----------------
+# Add custom entries if needed, for example:
+# secrets.json
+# .env.local
