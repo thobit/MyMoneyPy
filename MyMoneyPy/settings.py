@@ -33,6 +33,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'budgets',
+    'transactions',
     'accounts',
     'graphene_django',
     'django.contrib.admin',
