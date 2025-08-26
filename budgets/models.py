@@ -1,5 +1,4 @@
 from django.db import models
-import uuid
 
 # Create your models here.
 
@@ -12,4 +11,5 @@ class Budget(models.Model):
     target_balance = models.DecimalField(max_digits = 24,
                                          decimal_places = 6,
                                          null = True)
+    is_active = models.BooleanField(default = True)
 
