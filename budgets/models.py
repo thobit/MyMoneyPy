@@ -11,5 +11,8 @@ class Budget(models.Model):
     target_balance = models.DecimalField(max_digits = 24,
                                          decimal_places = 6,
                                          null = True)
+    savings_rate = models.DecimalField(max_digits = 18,
+                                       decimal_places = 6,
+                                       null = True)
     is_active = models.BooleanField(default = True)
 
