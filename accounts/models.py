@@ -9,6 +9,8 @@ class Account(models.Model):
                               editable = False)
     iban = models.CharField(max_length = 32,
                             default = "DE00 0000 0000 0000 0000 00")
+    bic = models.CharField(max_length = 11,
+                           default = "xxxxxxxxxxx")
     balance = models.DecimalField(max_digits = 24,
                                   decimal_places = 6,
                                   default = 0)
