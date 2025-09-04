@@ -14,3 +14,12 @@ class Account(models.Model):
     balance = models.DecimalField(max_digits = 24,
                                   decimal_places = 6,
                                   default = 0)
+
+class SubAccount(models.Model):
+    sub_acc_id = models.UUIDField(primary_key = True,
+                                  default = uuid.uuid4,
+                                  editable = False)
+    iban = models.CharField(max_length = 32,
+                            default = "DE00 0000 0000 0000 0000 00")
+    super_acc_id = models.ForeignKey(Account, on_delete=models.CASCADE)
+
